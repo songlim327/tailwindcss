@@ -623,6 +623,11 @@ select {
   margin-top: calc(0.5rem * (1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * (1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * (1 - var(--tw-space-y-reverse)));
@@ -682,17 +687,17 @@ select {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .pl-2 {
   padding-left: 0.5rem;
@@ -819,8 +824,14 @@ select {
   }
   .sm\:-translate-y-10 {
     --tw-translate-y: -2.5rem;
+  }
+  .sm\:-translate-y-10,
+  .sm\:-translate-y-20 {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
       skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .sm\:-translate-y-20 {
+    --tw-translate-y: -5rem;
   }
   .sm\:flex-row {
     flex-direction: row;
@@ -829,16 +840,6 @@ select {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * (1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-  .sm\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * (1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-  .sm\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.5rem * (1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
   .sm\:p-8 {
     padding: 2rem;
