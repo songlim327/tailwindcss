@@ -751,6 +751,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.underline {
+  text-decoration-line: underline;
+}
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -807,6 +810,9 @@ select {
 @media (min-width: 640px) {
   .sm\:mt-6 {
     margin-top: 1.5rem;
+  }
+  .sm\:mt-8 {
+    margin-top: 2rem;
   }
   .sm\:block {
     display: block;
