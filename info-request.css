@@ -514,6 +514,9 @@ select {
 }
 .my-4 {
   margin-top: 1rem;
+}
+.mb-4,
+.my-4 {
   margin-bottom: 1rem;
 }
 .mb-6 {
@@ -549,6 +552,9 @@ select {
 .h-screen {
   height: 100vh;
 }
+.w-3\/5 {
+  width: 60%;
+}
 .w-4\/6 {
   width: 66.666667%;
 }
@@ -570,8 +576,14 @@ select {
 .max-w-4xl {
   max-width: 56rem;
 }
+.max-w-lg {
+  max-width: 32rem;
+}
 .max-w-md {
   max-width: 28rem;
+}
+.max-w-screen-lg {
+  max-width: 1024px;
 }
 .max-w-screen-xl {
   max-width: 1280px;
@@ -603,6 +615,9 @@ select {
 }
 .rotate-45 {
   --tw-rotate: 45deg;
+}
+.rotate-45,
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
     skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -706,9 +721,6 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -732,10 +744,6 @@ select {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -761,6 +769,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
+.text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -779,6 +791,10 @@ select {
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 #0000000d;
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate)
+    var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-transform {
   transition-property: transform;
@@ -822,6 +838,9 @@ select {
   border-color: rgb(137 80 255 / var(--tw-border-opacity));
 }
 @media (min-width: 640px) {
+  .sm\:mt-0 {
+    margin-top: 0;
+  }
   .sm\:mt-4 {
     margin-top: 1rem;
   }
@@ -842,6 +861,9 @@ select {
   }
   .sm\:w-1\/2 {
     width: 50%;
+  }
+  .sm\:w-2\/5 {
+    width: 40%;
   }
   .sm\:w-80 {
     width: 20rem;
@@ -882,9 +904,6 @@ select {
   .sm\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-  .sm\:pb-2 {
-    padding-bottom: 0.5rem;
   }
   .sm\:pb-3 {
     padding-bottom: 0.75rem;
