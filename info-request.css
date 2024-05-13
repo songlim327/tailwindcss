@@ -875,12 +875,17 @@ select {
     --tw-translate-y: -2.5rem;
   }
   .sm\:-translate-y-10,
-  .sm\:-translate-y-20 {
+  .sm\:-translate-y-2 {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
       skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
+  .sm\:-translate-y-2 {
+    --tw-translate-y: -0.5rem;
+  }
   .sm\:-translate-y-20 {
     --tw-translate-y: -5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+      skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
   .sm\:flex-row {
     flex-direction: row;
